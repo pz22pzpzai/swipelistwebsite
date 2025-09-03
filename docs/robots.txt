@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://swipelist.app/sitemap.xml
+Sitemap: https://swipelist.co.uk/sitemap.xml
