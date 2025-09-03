@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Swipelist — Smarter Grocery Lists" />
+  <meta name="theme-color" content="#4caf50" />
+  <meta property="og:title" content="Swipelist — Smarter Grocery Lists" />
+  <meta property="og:description" content="Reorder categories to match the store you're in; the list auto-sorts as you shop." />
+  <meta property="og:image" content="/assets/logo.svg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://swipelist.app/" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Swipelist — Smarter Grocery Lists" />
+  <meta name="twitter:description" content="Reorder categories to match the store you're in; the list auto-sorts as you shop." />
+  <meta name="twitter:image" content="/assets/logo.svg" />
+  <title>Swipelist — Smarter Grocery Lists</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div id="cookie-banner">TODO: cookie consent</div>
+<header class="container">
+  <img src="/assets/logo.svg" alt="Swipelist logo" class="logo" />
+  <nav aria-label="Primary">
+    <a class="btn" href="https://play.google.com/store/apps/details?id=com.terryreed.swipelist">Get on Google Play</a>
+    <a class="btn outline" href="#mc-form">Join the mailing list</a>
+  </nav>
+</header>
+<main>
+  <section class="hero container">
+    <h1>Swipelist — Smarter Grocery Lists</h1>
+    <p class="subhead">Reorder categories to match the store you're in; the list auto-sorts as you shop.</p>
+  </section>
+  <section class="features container" id="features">
+    <h2>Features</h2>
+    <div class="grid">
+      <div class="tile"><h3>Swipe to delete</h3><p>Remove items with a quick swipe.</p></div>
+      <div class="tile"><h3>Store-aware sorting</h3><p>Categories reorder to match each store.</p></div>
+      <div class="tile"><h3>Share lists</h3><p>Collaborate in real time with family.</p></div>
+      <div class="tile"><h3>Offline-ready</h3><p>Your lists work even without internet.</p></div>
+    </div>
+  </section>
+  <section class="how container">
+    <h2>How it works</h2>
+    <ol>
+      <li>Create your list and set category order per store.</li>
+      <li>As you shop, swipe items to check them off.</li>
+      <li>Share lists to stay in sync with others.</li>
+    </ol>
+  </section>
+  <section class="signup container">
+    <h2>Stay in the loop</h2>
+    <form id="mc-form" aria-label="Join our mailing list">
+      <label for="mc-email" class="visually-hidden">Email address</label>
+      <input id="mc-email" type="email" required placeholder="you@example.com" />
+      <button type="submit">Subscribe</button>
+      <!-- TODO: Hook into MailerLite/HubSpot -->
+    </form>
+  </section>
+  <section class="faq container">
+    <h2>FAQ</h2>
+    <details>
+      <summary>Is Swipelist free?</summary>
+      <p>Yes, the core app is free to use.</p>
+    </details>
+    <details>
+      <summary>Can I share lists with my family?</summary>
+      <p>Absolutely, send them an invite and edit together.</p>
+    </details>
+    <details>
+      <summary>Does it work offline?</summary>
+      <p>Yes, your lists sync when you're back online.</p>
+    </details>
+  </section>
+</main>
+<footer class="container">
+  <p>&copy; <span id="year"></span> Swipelist</p>
+  <nav aria-label="Legal">
+    <a href="/privacy.html">Privacy</a>
+    <a href="/terms.html">Terms</a>
+    <a href="mailto:support@swipelist.app">Contact</a>
+  </nav>
+</footer>
+<script src="app.js" defer></script>
+</body>
+</html>
