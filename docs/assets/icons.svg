@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="icon-tick" viewBox="0 0 24 24">
+    <polyline points="4,12 9,17 20,6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="icon-sort" viewBox="0 0 24 24">
+    <path d="M3 6h13M3 12h9M3 18h5m7-12 4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="icon-drag" viewBox="0 0 24 24">
+    <path d="M12 3v18M3 12h18M8 8l-5-5M16 8l5-5M8 16l-5 5M16 16l5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="icon-swipe" viewBox="0 0 24 24">
+    <path d="M3 12h13m-3-3 3 3-3 3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M12 21v-8a2 2 0 0 0-2-2 2 2 0 0 0-2 2v1a2 2 0 0 1-2 2H5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="icon-share" viewBox="0 0 24 24">
+    <path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7M12 16V4m0 0 4 4m-4-4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="icon-offline" viewBox="0 0 24 24">
+    <path d="M19.35 10.04A7 7 0 0 0 5.64 6.36M3 3l18 18M7 17a4 4 0 0 1 7.65 1H19a3 3 0 0 0 0-6 3 3 0 0 0-.65.07" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="icon-lock" viewBox="0 0 24 24">
+    <rect x="3" y="11" width="18" height="11" rx="2" ry="2" fill="none" stroke="currentColor" stroke-width="2"/>
+    <path d="M7 11V7a5 5 0 0 1 10 0v4" fill="none" stroke="currentColor" stroke-width="2"/>
+  </symbol>
+  <symbol id="icon-twitter" viewBox="0 0 24 24">
+    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43.36a9 9 0 0 1-2.84 1.09A4.52 4.52 0 0 0 16.11 0c-2.5 0-4.51 2.05-4.51 4.58 0 .36.04.71.12 1.05A12.94 12.94 0 0 1 1.64.89a4.63 4.63 0 0 0-.61 2.3c0 1.59.79 2.99 2 3.81a4.36 4.36 0 0 1-2.05-.58v.06c0 2.22 1.53 4.07 3.56 4.49a4.5 4.5 0 0 1-2.04.08c.58 1.86 2.26 3.21 4.25 3.25A9.05 9.05 0 0 1 0 19.54 12.8 12.8 0 0 0 6.95 22c8.33 0 12.88-7.09 12.88-13.24 0-.2 0-.41-.01-.61A9.34 9.34 0 0 0 23 3z" fill="currentColor"/>
+  </symbol>
+  <symbol id="icon-github" viewBox="0 0 24 24">
+    <path d="M12 0a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.55-1.42-1.35-1.8-1.35-1.8-1.1-.77.08-.76.08-.76 1.22.09 1.86 1.27 1.86 1.27 1.08 1.88 2.83 1.34 3.52 1.03.11-.8.42-1.34.76-1.65-2.66-.31-5.47-1.36-5.47-6.05 0-1.34.47-2.44 1.24-3.3-.13-.31-.54-1.56.12-3.26 0 0 1-.33 3.3 1.26a11.3 11.3 0 0 1 6 0c2.3-1.59 3.3-1.26 3.3-1.26.66 1.7.25 2.95.12 3.26.77.86 1.24 1.96 1.24 3.3 0 4.7-2.81 5.74-5.49 6.05.43.38.81 1.12.81 2.26v3.35c0 .32.22.69.82.58A12 12 0 0 0 12 0z" fill="currentColor"/>
+  </symbol>
+</svg>

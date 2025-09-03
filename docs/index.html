@@ -1,85 +1,216 @@
+<!-- README: Static Swipelist marketing page. All site files live in /docs. Edit colors in styles.css via CSS variables under :root. -->
+<!-- CNAME: swipelist.co.uk -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Swipelist — Smarter Grocery Lists" />
-  <meta name="theme-color" content="#4caf50" />
-  <meta property="og:title" content="Swipelist — Smarter Grocery Lists" />
-  <meta property="og:description" content="Reorder categories to match the store you're in; the list auto-sorts as you shop." />
-  <meta property="og:image" content="/assets/logo.svg" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://swipelist.app/" />
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Swipelist — Smarter Grocery Lists" />
-  <meta name="twitter:description" content="Reorder categories to match the store you're in; the list auto-sorts as you shop." />
-  <meta name="twitter:image" content="/assets/logo.svg" />
-  <title>Swipelist — Smarter Grocery Lists</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Swipelist</title>
+  <meta name="description" content="Swipelist auto-sorts your list by the order you shop, so you fly through the store without back-tracking.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#37C1F3">
+  <meta property="og:title" content="Swipelist">
+  <meta property="og:description" content="Swipelist auto-sorts your list by the order you shop.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://swipelist.co.uk/">
+  <meta property="og:image" content="favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-<div id="cookie-banner">TODO: cookie consent</div>
-<header class="container">
-  <nav aria-label="Primary">
-    <a class="btn" href="https://play.google.com/store/apps/details?id=com.terryreed.swipelist">Get on Google Play</a>
-    <a class="btn outline" href="#mc-form">Join the mailing list</a>
-  </nav>
+<header>
+  <div class="container">
+    <a href="#home" class="brand" aria-label="Swipelist home">
+      <svg class="logo" viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="48" fill="var(--blue-500)"/>
+        <path d="M25 30l8 8 14-14M25 50l8 8 14-14M25 70l8 8 14-14" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M60 30h22M60 50h22M60 70h22" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+      </svg>
+      <span>Swipelist</span>
+    </a>
+    <button class="menu-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a class="btn primary" href="#pricing">Get the App</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
-<main>
-  <section class="hero container">
-    <h1>Swipelist — Smarter Grocery Lists</h1>
-    <p class="subhead">Reorder categories to match the store you're in; the list auto-sorts as you shop.</p>
-  </section>
-  <section class="features container" id="features">
-    <h2>Features</h2>
-    <div class="grid">
-      <div class="tile"><h3>Swipe to delete</h3><p>Remove items with a quick swipe.</p></div>
-      <div class="tile"><h3>Store-aware sorting</h3><p>Categories reorder to match each store.</p></div>
-      <div class="tile"><h3>Share lists</h3><p>Collaborate in real time with family.</p></div>
-      <div class="tile"><h3>Offline-ready</h3><p>Your lists work even without internet.</p></div>
+<main id="home">
+  <section class="hero">
+    <div class="hero-text">
+      <span class="badge">Beta</span>
+      <h1>Everything for your shopping list to succeed.</h1>
+      <p>Swipelist auto-sorts your list by the order you shop, so you fly through the store without back-tracking.</p>
+      <div class="actions">
+        <a href="#pricing" class="btn primary">Get Started</a>
+        <a href="#features" class="btn ghost">Learn More</a>
+      </div>
+      <p class="note">Starting at £0 / Free app</p>
+    </div>
+    <div class="hero-media">
+      <svg class="hero-art" viewBox="0 0 400 300" aria-hidden="true">
+        <g fill="var(--blue-300)" opacity="0.4">
+          <rect x="40" y="60" width="90" height="60" rx="8" ry="8"/>
+          <rect x="60" y="140" width="90" height="60" rx="8" ry="8"/>
+        </g>
+        <g filter="url(#shadow)">
+          <rect x="170" y="40" width="120" height="220" rx="20" ry="20" fill="var(--bg)" stroke="var(--blue-500)" stroke-width="4"/>
+          <rect x="190" y="80" width="80" height="12" rx="6" fill="var(--blue-50)"/>
+          <rect x="190" y="110" width="80" height="12" rx="6" fill="var(--blue-50)"/>
+          <rect x="190" y="140" width="80" height="12" rx="6" fill="var(--blue-50)"/>
+        </g>
+        <g>
+          <circle cx="330" cy="80" r="20" fill="var(--blue-300)"/>
+          <rect x="310" y="110" width="40" height="20" rx="5" fill="var(--blue-50)"/>
+          <rect x="310" y="140" width="40" height="20" rx="5" fill="var(--blue-50)"/>
+        </g>
+        <g fill="var(--blue-700)">
+          <rect x="300" y="200" width="60" height="12" rx="2"/>
+          <rect x="300" y="218" width="60" height="12" rx="2"/>
+          <rect x="300" y="236" width="60" height="12" rx="2"/>
+        </g>
+      </svg>
+      <svg class="shape star" viewBox="0 0 20 20" aria-hidden="true"><polygon points="10,0 12,7 20,7 14,11 16,18 10,14 4,18 6,11 0,7 8,7"/></svg>
+      <svg class="shape dot" viewBox="0 0 10 10" aria-hidden="true"><circle cx="5" cy="5" r="5"/></svg>
     </div>
   </section>
-  <section class="how container">
+  <section class="trust">
+    <ul>
+      <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#icon-tick"></use></svg>Free</li>
+      <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#icon-tick"></use></svg>Private</li>
+      <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#icon-tick"></use></svg>Works Offline</li>
+      <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#icon-tick"></use></svg>Auto-sorts by Aisle</li>
+    </ul>
+  </section>
+  <section id="features" class="features">
+    <h2>Features</h2>
+    <div class="grid">
+      <article>
+        <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#icon-sort"></use></svg>
+        <h3>Auto-sort by store layout</h3>
+        <p>Lists reorder themselves by aisle so you never back-track.</p>
+      </article>
+      <article>
+        <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#icon-drag"></use></svg>
+        <h3>Drag-and-drop categories</h3>
+        <p>Arrange sections to mirror your store.</p>
+      </article>
+      <article>
+        <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#icon-swipe"></use></svg>
+        <h3>Swipe to check off</h3>
+        <p>Swipe right to tick items, left to undo.</p>
+      </article>
+      <article>
+        <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#icon-share"></use></svg>
+        <h3>Share lists</h3>
+        <p>Send lists to family and keep them synced.</p>
+      </article>
+      <article>
+        <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#icon-offline"></use></svg>
+        <h3>Offline first</h3>
+        <p>Works without signal – data stays on your device.</p>
+      </article>
+      <article>
+        <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#icon-lock"></use></svg>
+        <h3>Simple, fast, and private</h3>
+        <p>Built for speed with no tracking.</p>
+      </article>
+    </div>
+  </section>
+  <section class="how">
     <h2>How it works</h2>
-    <ol>
-      <li>Create your list and set category order per store.</li>
-      <li>As you shop, swipe items to check them off.</li>
-      <li>Share lists to stay in sync with others.</li>
+    <ol class="steps">
+      <li>
+        <svg class="phone" viewBox="0 0 80 150" aria-hidden="true">
+          <rect x="5" y="5" width="70" height="140" rx="12" ry="12" fill="var(--bg)" stroke="var(--blue-500)" stroke-width="4"/>
+          <rect x="20" y="30" width="40" height="8" rx="4" fill="var(--blue-50)"/>
+          <rect x="20" y="50" width="40" height="8" rx="4" fill="var(--blue-50)"/>
+        </svg>
+        <h3>Create a list</h3>
+      </li>
+      <li>
+        <svg class="phone" viewBox="0 0 80 150" aria-hidden="true">
+          <rect x="5" y="5" width="70" height="140" rx="12" ry="12" fill="var(--bg)" stroke="var(--blue-500)" stroke-width="4"/>
+          <rect x="20" y="30" width="40" height="8" rx="4" fill="var(--blue-50)"/>
+          <rect x="20" y="60" width="40" height="8" rx="4" fill="var(--blue-50)"/>
+          <path d="M20 90h40" stroke="var(--blue-500)" stroke-width="4" stroke-linecap="round"/>
+        </svg>
+        <h3>Reorder categories to match your store</h3>
+      </li>
+      <li>
+        <svg class="phone" viewBox="0 0 80 150" aria-hidden="true">
+          <rect x="5" y="5" width="70" height="140" rx="12" ry="12" fill="var(--bg)" stroke="var(--blue-500)" stroke-width="4"/>
+          <polyline points="20,40 35,55 60,25" fill="none" stroke="var(--blue-500)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h3>Swipe and go</h3>
+      </li>
     </ol>
   </section>
-  <section class="signup container">
-    <h2>Stay in the loop</h2>
-    <form id="mc-form" aria-label="Join our mailing list">
-      <label for="mc-email" class="visually-hidden">Email address</label>
-      <input id="mc-email" type="email" required placeholder="you@example.com" />
-      <button type="submit">Subscribe</button>
-      <!-- TODO: Hook into MailerLite/HubSpot -->
+  <section id="pricing" class="pricing">
+    <div class="card">
+      <h2>Free forever</h2>
+      <p>Swipelist<br><small>Optional Pro coming later.</small></p>
+      <a href="#contact" class="btn primary">Get The App</a>
+    </div>
+  </section>
+  <section class="faq">
+    <h2>FAQ</h2>
+    <div class="accordion">
+      <div class="item">
+        <button aria-expanded="false">What is Swipelist?</button>
+        <div class="panel"><p>Swipelist is a smart shopping list that auto-sorts items by the way you walk the store.</p></div>
+      </div>
+      <div class="item">
+        <button aria-expanded="false">Does it work offline?</button>
+        <div class="panel"><p>Yes. Swipelist stores everything on your device so it works without signal.</p></div>
+      </div>
+      <div class="item">
+        <button aria-expanded="false">Will there be a paid version?</button>
+        <div class="panel"><p>The core app is free forever. Optional Pro features may arrive later.</p></div>
+      </div>
+      <div class="item">
+        <button aria-expanded="false">How do I share a list?</button>
+        <div class="panel"><p>Invite friends or family and lists stay in sync automatically.</p></div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="signup">
+    <h2>Join the launch list</h2>
+    <form id="signup-form" novalidate>
+      <input type="email" name="email" placeholder="you@example.com" required>
+      <button type="submit" class="btn primary">Notify Me</button>
     </form>
   </section>
-  <section class="faq container">
-    <h2>FAQ</h2>
-    <details>
-      <summary>Is Swipelist free?</summary>
-      <p>Yes, the core app is free to use.</p>
-    </details>
-    <details>
-      <summary>Can I share lists with my family?</summary>
-      <p>Absolutely, send them an invite and edit together.</p>
-    </details>
-    <details>
-      <summary>Does it work offline?</summary>
-      <p>Yes, your lists sync when you're back online.</p>
-    </details>
-  </section>
 </main>
-<footer class="container">
-  <p>&copy; <span id="year"></span> Swipelist</p>
-  <nav aria-label="Legal">
-    <a href="/privacy.html">Privacy</a>
-    <a href="/terms.html">Terms</a>
-    <a href="mailto:support@swipelist.app">Contact</a>
-  </nav>
+<footer>
+  <div class="container">
+    <a href="#home" class="brand" aria-label="Swipelist home">
+      <svg class="logo" viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="48" fill="var(--blue-500)"/>
+        <path d="M25 30l8 8 14-14M25 50l8 8 14-14M25 70l8 8 14-14" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M60 30h22M60 50h22M60 70h22" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+      </svg>
+      <span>Swipelist</span>
+    </a>
+    <nav class="foot-nav">
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="social">
+      <a href="https://twitter.com" aria-label="Twitter"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#icon-twitter"></use></svg></a>
+      <a href="https://github.com" aria-label="GitHub"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#icon-github"></use></svg></a>
+    </div>
+  </div>
+  <p class="copy">© 2024 Swipelist</p>
 </footer>
-<script src="app.js" defer></script>
 </body>
 </html>
