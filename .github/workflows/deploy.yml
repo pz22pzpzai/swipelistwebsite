@@ -2,22 +2,29 @@ name: Deploy
 
 on:
   push:
-    branches: [main]
+    branches: [ main ]
+  workflow_dispatch:
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Check out repo
+        uses: actions/checkout@v4
+
       - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          server: ${{ secrets.HOSTINGER_FTP_SERVER }}
-          username: ${{ secrets.HOSTINGER_FTP_USERNAME }}
-          password: ${{ secrets.HOSTINGER_FTP_PASSWORD }}
-          port: ${{ secrets.HOSTINGER_FTP_PORT }}
-          protocol: ftps
-          local-dir: site
-          server-dir: ${{ secrets.HOSTINGER_SERVER_DIR }}
-          log-level: standard
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps            # use 'sftp' if your host requires it
+          port: 21                  # 21 for FTP/FTPS, 22 for SFTP
+          local-dir: docs/          # your site lives in /docs
+          server-dir: public_html/  # e.g. public_html/ or swipelist.co.uk/
+          timeout: 600
           dangerous-clean-slate: false
+          exclude: |
+            **/.git*
+            **/.github/**
+            **/node_modules/**
