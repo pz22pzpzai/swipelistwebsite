@@ -76,6 +76,8 @@ footer .foot-nav a:hover,footer .foot-nav a:focus{color:var(--blue-50);}
 footer .social a{margin-left:.5rem;color:#fff;}
 footer .social a:hover,footer .social a:focus{color:var(--blue-50);}
 .copy{text-align:center;margin-top:1rem;font-size:.875rem;color:var(--blue-50);}
+.copy .footer-note{display:inline-block;margin-top:.25rem;font-size:.75rem;color:rgba(231,247,255,0.8);}
+.copy .footer-note:hover,.copy .footer-note:focus{color:#fff;text-decoration:underline;}
 :focus-visible{outline:2px dashed var(--blue-700);outline-offset:2px;}
 @media (max-width:768px){
   nav{position:absolute;top:100%;right:0;background:var(--bg);width:200px;max-height:0;overflow:hidden;transition:max-height .3s ease;box-shadow:0 4px 8px rgba(0,0,0,0.1);}
